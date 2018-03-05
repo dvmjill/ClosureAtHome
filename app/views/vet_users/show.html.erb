@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @vet_user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @vet_user.last_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @vet_user.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @vet_user.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @vet_user.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @vet_user.zip %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @vet_user.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @vet_user.phone %>
+</p>
+
+<p>
+  <strong>Crematory name:</strong>
+  <%= @vet_user.crematory_name %>
+</p>
+
+<%= link_to 'Edit', edit_vet_user_path(@vet_user) %> |
+<%= link_to 'Back', vet_users_path %>

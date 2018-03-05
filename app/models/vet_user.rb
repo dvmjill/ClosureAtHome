@@ -1,0 +1,2 @@
+class VetUser < ApplicationRecord
+end

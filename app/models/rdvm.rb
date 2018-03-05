@@ -1,0 +1,2 @@
+class Rdvm < ApplicationRecord
+end

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vet Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Crematory name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vet_users.each do |vet_user| %>
+      <tr>
+        <td><%= vet_user.first_name %></td>
+        <td><%= vet_user.last_name %></td>
+        <td><%= vet_user.address %></td>
+        <td><%= vet_user.city %></td>
+        <td><%= vet_user.state %></td>
+        <td><%= vet_user.zip %></td>
+        <td><%= vet_user.email %></td>
+        <td><%= vet_user.phone %></td>
+        <td><%= vet_user.crematory_name %></td>
+        <td><%= link_to 'Show', vet_user %></td>
+        <td><%= link_to 'Edit', edit_vet_user_path(vet_user) %></td>
+        <td><%= link_to 'Destroy', vet_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vet User', new_vet_user_path %>
