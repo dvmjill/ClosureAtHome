@@ -1,4 +1,11 @@
+<h1>Log-In Info for my Vet User Account</h1>
+
 <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @vet.password_digest %>
+</p>
 
 <p>
   <strong>First name:</strong>
@@ -47,3 +54,6 @@
 
 <%= link_to 'Edit', edit_vet_user_path(@vet_user) %> |
 <%= link_to 'Back', vet_users_path %>
+<h5>Changed made include adding password digest section above as well as below code</h5>
+<%= link_to "Update My Log-In Details", edit_vet_path(id: :id_vet) %>
+<h3>/Users/eileenulry/dropbox/closure2/ClosureAtHome/app/views/vet_users/show.html.erb</h3>

@@ -1,0 +1,8 @@
+<% if flash[:errors] %>
+  <% flash[:errors].each do |err| %>
+    <p><%= err %></p>
+  <% end%>
+<% end %>
+
+render "shared/errors", model: @vet_users
+<h3>/Users/eileenulry/dropbox/closure2/ClosureAtHome/app/views/shared</h3>
