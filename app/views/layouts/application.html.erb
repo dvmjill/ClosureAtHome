@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ClosureAtHome</title>
+    <title>Closure At Home</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,27 @@
   </head>
 
   <body>
+<<<<<<< HEAD
     <div class="container">
+=======
+    <h5>added below ...</h5>
+    <h1>Application.html.erb Template in Layouts</h1>
+    <ul>
+      <li><%= link_to 'Vet Users', vet_users_path%></li>
+      <li><%= link_to "RDVM Contacts", rdvms_path %></li>
+      <li><%= link_to "Client List", clients_path %></li>
+      <li><%= link_to "Pets in Database", pets_path %></li>
+      <li><%= link_to "Add New RDVM", new_rdvm_path %></li>
+      <li><%= link_to "New Client", new_client_path %></li>
+      <li><%= link_to "Add a Pet", new_pet_path %></li>
+      <li><%= link_to 'New Vet User', new_vet_user_path%></li>
+      </ul>
+    <% render 'shared/errors' %>
+    <h1 ><a href="http://closureathome.com/"  target="_blank" id="logo">closureathome.com</a></h1>
+    <br>
+    <br>
+    <h3>/Users/eileenulry/dropbox/closure2/ClosureAtHome/app/views/layouts/application.html.erb</h3>
+>>>>>>> 52c84b52b8650d2e12b0d426654040465852f4ab
     <%= yield %>
   </div>
   </body>

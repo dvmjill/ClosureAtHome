@@ -28,10 +28,12 @@ class VetUsersController < ApplicationController
 
     respond_to do |format|
       if @vet_user.save
+        # session[:vet_id] = @vet.id
         format.html { redirect_to @vet_user, notice: 'Vet user was successfully created.' }
         format.json { render :show, status: :created, location: @vet_user }
       else
         format.html { render :new }
+        # format.html { render :vet_login}
         format.json { render json: @vet_user.errors, status: :unprocessable_entity }
       end
     end
@@ -72,3 +74,5 @@ class VetUsersController < ApplicationController
       params.require(:vet_user).permit(:first_name, :last_name, :address, :city, :state, :zip, :email, :phone, :crematory_name)
     end
 end
+# def vet_params
+#   params.require(:vet).permit(:username, :password)
