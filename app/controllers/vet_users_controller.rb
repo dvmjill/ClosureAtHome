@@ -4,7 +4,7 @@ class VetUsersController < ApplicationController
   # GET /vet_users
   # GET /vet_users.json
   def index
-    @vet_users = VetUser.all
+    @vet_users = Vet_user.all
   end
 
   # GET /vet_users/1
