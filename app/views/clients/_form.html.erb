@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= form.label :first_name %>
     <%= form.text_field :first_name, id: :client_first_name %>
@@ -65,8 +66,11 @@
     <%= form.label :vet_id %>
     <%= form.number_field :vet_id, id: :client_vet_id %>
   </div>
+  <span> input type="hidden" name="client[:vet_id]" value="< % = current_user.id % >" </span>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+<h5>added hidden input for vet id</h5>
+<h3>/Users/eileenulry/dropbox/closure2/ClosureAtHome/app/views/clients/_form.html.erb</h3>

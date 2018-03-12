@@ -1,0 +1,25 @@
+<% if model.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(model.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+    <ul>
+    <% model.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<!-- render "shared/form_errors", model: @song %> -->
+<!-- change @song to the word "model" because cannot use implicent variable and must be renamed.
+if @song.errors.any? %>
+  <div id="error_explanation">
+    <h2> pluralize(@song.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+    <ul>
+   @song.errors.full_messages.each do |message| %>
+      <li>message %></li>
+   end %>
+    </ul>
+  </div>
+end %> -->

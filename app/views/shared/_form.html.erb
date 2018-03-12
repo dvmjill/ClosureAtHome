@@ -1,0 +1,35 @@
+
+<div class="field">
+  <%= form.label :client %>
+  <%= form.select :client_id id: :pet_client_id %>
+</div>
+
+<div class="field">
+  <%= form.label :name %>
+  <%= form.text_field :name, id: :client_name %>
+</div>
+
+<div class="field">
+  <%= form.label :name %>
+  <%= form.text_field :name, id: :pet_name %>
+</div>
+
+<div class="field">
+  <%= form.label :weight %>
+  <%= form.number_field :weight, id: :pet_weight %>
+</div>
+
+<div class="field">
+  <%= form.label :breed %>
+  <%= form.select :breed_id, id: :pet_breed %>
+  <%= form.text_field :breed, id: :pet_breed %>
+</div>
+
+<div class="field">
+  <%= form.label :rdvm_id %>
+  <%= form.select :rdvm_id id: :pet_rdvm_id %>
+  <%= form.text_field :rdvm, id: :pet_rdvm %>
+
+</div>
+
+<h3>Closure/app/views/partials/_form.html.erb</h3>
