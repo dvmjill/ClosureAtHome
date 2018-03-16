@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-<<<<<<< HEAD
 
-  before_action :authenticate_user!
+
+  # before_action :authenticate_user!
 
   before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -10,12 +10,12 @@ class ApplicationController < ActionController::Base
   	devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
   	devise_parameter_sanitizer.permit(:account_update, keys: [:username])
   end
-=======
+
   # before_action :verify_logged_in
   #
   # def verify_logged_in
   #   redirect_to root_path unless current_user
   #
   # end
->>>>>>> 52c84b52b8650d2e12b0d426654040465852f4ab
+
 end
