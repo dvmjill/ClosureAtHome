@@ -30,6 +30,14 @@
     <br>
     <h3>/Users/eileenulry/dropbox/closure2/ClosureAtHome/app/views/layouts/application.html.erb</h3>
 
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+
     <%= yield %>
   </div>
   </body>
