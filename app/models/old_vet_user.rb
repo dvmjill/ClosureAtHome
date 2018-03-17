@@ -1,0 +1,22 @@
+# # require 'bcrypt'
+#
+# class VetUser < ApplicationRecord
+#   include BCrypt
+#   has_many :clients
+#   has_many :pets
+#   has_many :rdvms
+#
+#   has_secure_password
+#
+# # def password
+# #  @password ||= Password.new(password_digest)
+# # end
+# #
+# # def password=(new_password)
+# #  @password = Password.create(new_password)
+# #  self.password_digest = @password
+# # end
+#
+#
+#
+# end
